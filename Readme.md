@@ -8,6 +8,20 @@
   ![XCode Add Package](./ios/docs/install_2_add_package_url.png)
 3. Choose the single product `WaldoAppSdk` <br />
   ![XCode Choose Product](./ios/docs/install_3_choose_product.png)
+4. Start using the SDK <br />
+   ```swift
+   import StoreKit
+   import WaldoAppSdk
+
+   func showStoreReviewController(windowScene: UIWindowScene) {
+       if isInsideWaldo() {
+           // Don't request AppStore review during UI tests
+           return
+       }
+
+       SKStoreReviewController.requestReview(in: windowScene)
+   }
+   ```
 
 ## Publishing a release
 
