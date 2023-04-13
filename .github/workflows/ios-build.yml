@@ -22,8 +22,6 @@ jobs:
         with:
           swift-version: ${{ matrix.swift }}
       - name: Build
-        working-directory: ./ios
         run: swift build
       - name: Run tests
-        working-directory: ./ios
         run: swift test

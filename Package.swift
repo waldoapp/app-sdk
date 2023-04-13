@@ -17,9 +17,11 @@ let package = Package(
     targets: [
         .target(
             name: "WaldoAppSdk",
-            dependencies: []),
+            dependencies: [],
+            path: "ios/Sources"),
         .testTarget(
             name: "WaldoAppSdkTests",
-            dependencies: ["WaldoAppSdk"]),
+            dependencies: ["WaldoAppSdk"],
+            path: "ios/Tests"),
     ]
 )
