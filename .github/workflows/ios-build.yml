@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: fwal/setup-swift@2040b795e5c453c3a05fcb8316496afc8a74f192
+      - uses: fwal/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
         with:
           swift-version: ${{ matrix.swift }}
       - name: Build
