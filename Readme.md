@@ -11,13 +11,14 @@
 
 ## Publishing a release
 
-Create a tag named `ios/vX.Y.Z` and push it to the repository. Then create a release on the tag.
+Create a tag named `X.Y.Z` and push it to the repository. Then create a release on the tag.
 
 ```bash
 export IOS_VERSION=X.Y.Z
-git tag ios/v$IOS_VERSION
-git push origin ios/v$IOS_VERSION
-gh release create ios/v$IOS_VERSION
+git tag $IOS_VERSION
+git push origin $IOS_VERSION
+
+gh release create $IOS_VERSION --title "iOS $IOS_VERSION" --notes ""
 ```
 
 # Android
@@ -34,5 +35,6 @@ Create a tag named `android/vX.Y.Z` and push it to the repository. Then create a
 export ANDROID_VERSION=X.Y.Z
 git tag android/v$ANDROID_VERSION
 git push origin android/v$ANDROID_VERSION
-gh release create android/v$ANDROID_VERSION
+
+gh release create android/v$ANDROID_VERSION --title "Android $ANDROID_VERSION" --notes ""
 ```
