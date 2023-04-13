@@ -41,7 +41,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.waldo'
             artifactId = 'app-sdk'
-            version = '0.0.2'
+            version = System.getenv("GITHUB_VERSION")
 
             afterEvaluate {
                 from components.release
