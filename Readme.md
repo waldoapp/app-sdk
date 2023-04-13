@@ -2,7 +2,12 @@
 
 ## Usage
 
-TODO
+1. Open the packages view in XCode <br />
+  ![XCode File Menu](./ios/docs/install_1_file_menu.png)
+2. Add the package using the url `https://github.com/waldoapp/app-sdk` <br />
+  ![XCode Add Package](./ios/docs/install_2_add_package_url.png)
+3. Choose the single product `WaldoAppSdk` <br />
+  ![XCode Choose Product](./ios/docs/install_3_choose_product.png)
 
 ## Publishing a release
 
