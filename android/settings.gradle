@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Waldo App SDK"
 include ':app'
+include ':appsdk'
+include ':sampleapp'
